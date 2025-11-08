@@ -1,0 +1,110 @@
+:root {
+    --primary-color: #ffffff;
+    --accent1-color: #324d73;
+    --text-color: #3B3B3B;
+    --soft-gray: rgba(50, 50, 50, .2);
+    --body-font: Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background: #f4f4f4;
+}
+
+/* Header */
+header {
+    background: var(--accent1-color);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Navigation */
+nav {
+    background: var(--text-color);
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 0.8rem;
+    width: 100%;
+}
+
+nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Main */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+/* Cards */
+.card {
+    background: var(--primary-color);
+    padding: 1.5rem;
+    border: 1px solid var(--soft-gray); 
+    border-radius: 10px;
+    
+}
+
+.about-content,
+.country-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.about-content p,
+.country-content p {
+    line-height: 1.5;
+}
+
+.location {
+    text-align: center;
+    border-bottom: 1px solid var(--soft-gray);
+    padding: 10px;
+}
+
+
+/* Images */
+.profile {
+    width: 150px;
+    border-radius: 10px;
+}
+
+.flag {
+    width: 120px;
+    border-radius: 6px;
+}
+
+.flag-label {
+    margin-top: 0.3rem;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+    background: var(--accent1-color);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 1.2rem;
+    margin-top: 1.5rem;
+}
+
+nav a:hover {
+    border-bottom: 2px solid var(--primary-color);
+}

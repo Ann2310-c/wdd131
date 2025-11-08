@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Ana Mosquera</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | Personal Home Page | Ana Mosquera" />
+    <meta name="author" content="Ana Mosquera" />
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD 131 - Ana Mosquera</h1>
+    <header>
+        <h1><span id="course-title">WDD 131: Dynamic Web Fundamentals - Ana Mosquera</span></h1>
+        <nav class="navigation">
+            <a href="https://linkedin.com">LinkedIn</a>
+            <a href="https://byupw.instructure.com">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>My name is Ana Mosquera. I am from Popayán, Colombia. I am currently studying Software Development and
+                    I enjoy working on web development projects. I love learning new things and I value creativity,
+                    patience, and kindness. In my free time, I enjoy spending time with family, going to church,
+                    exercising, and exploring new ideas.</p>
+                <img src="images/photo-Ana.jpg" alt="Photo of Ana Mosquera" class="profile">
+            </div>
+
+            <h3 class="location">Popayán, Colombia</h3>
+            <div class="country-content">
+                <img src="images/Flag_of_Colombia.svg.png" alt="Flag of Colombia" class="flag">
+                <p>Popayán is known as “La Ciudad Blanca” because of its historic colonial architecture. It is a city
+                    rich in cultural heritage, tradition, and calm and beautiful landscapes.</p>
+            </div>
+            <p class="flag-label"><em>Official Flag of Colombia</em></p>
+        </section>
+
+        <section class="card">
+            <h2>Web Resources</h2>
+            <ul class="resource-list">
+                <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+                <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> 🌸 Ana Maria Mosquera 🌸 Colombia</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
