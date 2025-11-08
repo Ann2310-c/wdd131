@@ -3,7 +3,7 @@
     --accent1-color: #324d73;
     --text-color: #3B3B3B;
     --soft-gray: rgba(50, 50, 50, .2);
-    --body-font: Arial, sans-serif;
+    --body-font: 'Inter', sans-serif;
 }
 
 * {
