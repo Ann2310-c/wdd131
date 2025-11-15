@@ -1,0 +1,120 @@
+:root {
+    --accent: #351362;
+    --light: #fff;
+    --font: 'Inter', sans-serif;
+}
+
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+    background: #f4f4f4;
+}
+
+/* HEADER */
+header {
+    background: var(--accent);
+    color: var(--light);
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+/*Hide title when menu is open*/
+header.menu-open h1 {
+    display: none;
+}
+
+/*Hamburger button*/
+#menu {
+    font-size: 2rem;
+    border: none;
+    color: var(--light);
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/*Center navigation*/
+header.menu-open nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* NAVIGATION */
+.navigation {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.navigation a {
+    color: var(--light);
+    text-decoration: none;
+    padding: .5rem;
+}
+
+header.menu-open .navigation {
+    display: flex;
+}
+
+header.menu-open .navigation a {
+    font-size: 1.4rem;
+    padding: 0.7rem 1rem;
+}
+
+/* MAIN */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+/*Gallery*/
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+figcaption {
+    text-align: center;
+    padding: .3rem;
+}
+
+
+/* FOOTER */
+footer {
+    background: var(--accent);
+    color: var(--light);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
