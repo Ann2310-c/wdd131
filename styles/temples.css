@@ -49,7 +49,7 @@ header.menu-open h1 {
     right: 10px;
 }
 
-/*Center navigation*/
+/*Center navigation when open*/
 header.menu-open nav {
     width: 100%;
     display: flex;
@@ -70,6 +70,11 @@ header.menu-open nav {
     padding: .5rem;
 }
 
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+/*Navigation visible when menu is open*/
 header.menu-open .navigation {
     display: flex;
 }
@@ -79,6 +84,14 @@ header.menu-open .navigation a {
     padding: 0.7rem 1rem;
 }
 
+/*Desktop navigation*/
+@media (min-width: 700px) {
+    .navigation {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
 /* MAIN */
 main {
     max-width: 1000px;
@@ -86,7 +99,7 @@ main {
     padding: 1rem;
 }
 
-main h1 {
+main h2 {
     text-align: center;
     font-size: 1.6rem;
 }
@@ -109,7 +122,6 @@ figcaption {
     padding: .3rem;
 }
 
-
 /* FOOTER */
 footer {
     background: var(--accent);
@@ -118,3 +130,4 @@ footer {
     padding: 1rem;
     margin-top: 1rem;
 }
+
