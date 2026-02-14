@@ -52,29 +52,43 @@ textarea {
   height: 90px;
 }
 
-.stars {
+/* ===== RATING FIX ===== */
+
+.rating-group {
   display: flex;
   justify-content: space-between;
+  margin-top: 10px;
+}
+
+.rating-group div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rating-group label {
+  margin: 0;
+  font-weight: bold;
+}
+
+.rating-group input {
   margin-top: 5px;
 }
 
-.rating {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 5px;
-}
+/* ===== FEATURES FIX ===== */
 
-.features label {
+.features-group div {
   display: flex;
   align-items: center;
-  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+.features-group label {
+  margin: 0 0 0 8px;
   font-weight: normal;
 }
 
-.features input {
-  margin-right: 8px;
-}
-
+/* Optional text */
 .optional {
   color: blue;
   font-size: 0.9em;
@@ -99,3 +113,9 @@ footer {
   margin-top: auto;
 }
 
+/* Media Query (Required) */
+@media (min-width: 600px) {
+  .wrapper {
+    width: 600px;
+  }
+}

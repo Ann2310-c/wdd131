@@ -3,90 +3,128 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Product Review form where users can select a product, rate it, and submit feedback.">
+<meta name="author" content="Ana Mosquera">
 <title>Product Review</title>
 <link rel="stylesheet" href="styles/form.css">
 <script src="scripts/form.js" defer></script>
-
-
 </head>
+
 <body>
 
 <div class="wrapper">
 
-  <header>
-    <h1>Product Review</h1>
-  </header>
+<header>
+  <h1>Product Review</h1>
+</header>
 
-  <div class="white-bar"></div>
+<div class="white-bar"></div>
 
-  <main>
+<main>
 
-    <form method="get" action="review.html">
+<form method="get" action="review.html">
 
-      <label for="product">Product Name</label>
-      <select id="product" name="product" required>
-        <option value="" disabled selected>Choose a Product ...</option>
-      </select>
+  <!-- Product -->
+  <label for="product">Product Name</label>
+  <select id="product" name="product" required>
+    <option value="" disabled selected>Select a Product ...</option>
+  </select>
 
-      <label>Overall Rating</label>
+  <!-- Rating -->
+  <p>Overall Rating</p>
 
-      <div class="stars">
-        <div>★</div>
-        <div>★★</div>
-        <div>★★★</div>
-        <div>★★★★</div>
-        <div>★★★★★</div>
-      </div>
+  <div class="rating-group">
 
-      <div class="rating">
-        <input type="radio" name="rating" value="1" required>
-        <input type="radio" name="rating" value="2" required>
-        <input type="radio" name="rating" value="3" required>
-        <input type="radio" name="rating" value="4" required>
-        <input type="radio" name="rating" value="5" required>
-      </div>
+    <div>
+      <label for="star1">★</label>
+      <input type="radio" id="star1" name="rating" value="1" required>
+    </div>
 
-      <label for="date">Date of Installation</label>
-      <input type="date" id="date" name="date" required>
+    <div>
+      <label for="star2">★★</label>
+      <input type="radio" id="star2" name="rating" value="2">
+    </div>
 
-      <label>
-        Which features did you find useful in the product?
-        <br><em>(Check all that apply)</em>
-      </label>
+    <div>
+      <label for="star3">★★★</label>
+      <input type="radio" id="star3" name="rating" value="3">
+    </div>
 
-      <div class="features">
-        <label><input type="checkbox" name="features" value="durability"> Durability</label>
-        <label><input type="checkbox" name="features" value="ease"> Ease of Use</label>
-        <label><input type="checkbox" name="features" value="performance"> Performance</label>
-        <label><input type="checkbox" name="features" value="design"> Design</label>
-      </div>
+    <div>
+      <label for="star4">★★★★</label>
+      <input type="radio" id="star4" name="rating" value="4">
+    </div>
 
-      <label for="review">
-        Written Review <span class="optional">(Optional)</span>
-      </label>
-      <textarea id="review" name="review"></textarea>
+    <div>
+      <label for="star5">★★★★★</label>
+      <input type="radio" id="star5" name="rating" value="5">
+    </div>
 
-      <label for="name">
-        Your Name <span class="optional">(Optional)</span>
-      </label>
-      <input type="text" id="name" name="name">
+  </div>
 
-      <button type="submit">Post Review</button>
+  <!-- Date -->
+  <label for="date">Date of Installation</label>
+  <input type="date" id="date" name="date" required>
 
-    </form>
+  <!-- Features -->
+  <p>
+    Which features did you find useful in the product?<br>
+    <em>(Check all that apply)</em>
+  </p>
 
-  </main>
+  <div class="features-group">
+
+    <div>
+      <input type="checkbox" id="durable" name="features" value="Durable">
+      <label for="durable">Durable</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="design" name="features" value="Design">
+      <label for="design">Design</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="performance" name="features" value="Performance">
+      <label for="performance">Performance</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="value" name="features" value="Value">
+      <label for="value">Value</label>
+    </div>
+
+  </div>
+
+  <!-- Review -->
+  <label for="review">
+    Written Review <span class="optional">(Optional)</span>
+  </label>
+  <textarea id="review" name="review"></textarea>
+
+  <!-- Name -->
+  <label for="name">
+    Your Name <span class="optional">(Optional)</span>
+  </label>
+  <input type="text" id="name" name="name">
+
+  <!-- Submit -->
+  <button type="submit">Post Review</button>
+
+</form>
+
+</main>
 
 </div>
 
 <footer>
-        <p>©<span id="currentyear"></span> 🌸 Ana Maria Mosquera 🌸 Colombia</p>
-        <span id="lastModified"></span>
-    </footer>
-
+  <p>©<span id="currentyear"></span> 🌸 Ana Maria Mosquera 🌸 Colombia</p>
+  <span id="lastModified"></span>
+</footer>
 
 </body>
 </html>
+
 
 
 
