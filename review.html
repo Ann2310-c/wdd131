@@ -3,26 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="review page with count.">
-<meta name="author" content="Ana Mosquera">
+  <meta name="author" content="Ana Mosquera">
   <title>Review Submitted</title>
   <script src="scripts/review.js" defer></script>
 </head>
+
 <body>
+  <h1>Thank You for Your Review!</h1>
+  <p>Total Reviews Submitted: <span id="counter"></span></p>
 
-<h1>Thank You for Your Review!</h1>
+  <button onclick="window.location.href='form.html'">
+    go back
+  </button>
 
-<p>Total Reviews Submitted: <span id="counter"></span></p>
-
-<button onclick="window.location.href='form.html'">
-  go back
-</button>
-
-<footer>
-        <p>©<span id="currentyear"></span> 🌸 Ana Maria Mosquera 🌸 Colombia</p>
-        <span id="lastModified"></span>
-    </footer>
-
-
+  <footer>
+    <p>©<span id="currentyear"></span> 🌸 Ana Maria Mosquera 🌸 Colombia</p>
+    <span id="lastModified"></span>
+  </footer>
+  
 </body>
 </html>
 

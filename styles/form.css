@@ -88,7 +88,6 @@ textarea {
   font-weight: normal;
 }
 
-/* Optional text */
 .optional {
   color: blue;
   font-size: 0.9em;
@@ -113,7 +112,7 @@ footer {
   margin-top: auto;
 }
 
-/* Media Query (Required) */
+/* Media Query */
 @media (min-width: 600px) {
   .wrapper {
     width: 600px;

@@ -1,116 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Product Review form where users can select a product, rate it, and submit feedback.">
-<meta name="author" content="Ana Mosquera">
-<title>Product Review</title>
-<link rel="stylesheet" href="styles/form.css">
-<script src="scripts/form.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product Review form where users can select a product, rate it, and submit feedback.">
+    <meta name="author" content="Ana Mosquera">
+    <title>Product Review</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
 </head>
 
 <body>
+    <div class="wrapper">
+        <header>
+        <h1>Product Review</h1>
+        </header>
 
-<div class="wrapper">
+        <div class="white-bar"></div>
 
-<header>
-  <h1>Product Review</h1>
-</header>
+        <main>
+            <form method="get" action="review.html">
+                <!-- Product -->
+                <label for="product">Product Name</label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
 
-<div class="white-bar"></div>
+                <!-- Rating -->
+                <p>Overall Rating</p>
+                <label for="star1">★</label>
+                <input type="radio" id="star1" name="rating" value="1" required>
 
-<main>
+                <label for="star2">★★</label>
+                <input type="radio" id="star2" name="rating" value="2" required>
 
-<form method="get" action="review.html">
+                <label for="star3">★★★</label>
+                <input type="radio" id="star3" name="rating" value="3" required>
 
-  <!-- Product -->
-  <label for="product">Product Name</label>
-  <select id="product" name="product" required>
-    <option value="" disabled selected>Select a Product ...</option>
-  </select>
+                <label for="star4">★★★★</label>
+                <input type="radio" id="star4" name="rating" value="4" required>
 
-  <!-- Rating -->
-  <p>Overall Rating</p>
+                <label for="star5">★★★★★</label>
+                <input type="radio" id="star5" name="rating" value="5" required>
 
-<label for="star1">★</label>
-<input type="radio" id="star1" name="rating" value="1" required>
+                <!-- Date -->
+                <label for="date">Date of Installation</label>
+                <input type="date" id="date" name="date" required>
 
-<label for="star2">★★</label>
-<input type="radio" id="star2" name="rating" value="2" required>
+                <!-- Features -->
+                <p>
+                    Which features did you find useful in the product?<br>
+                    <em>(Check all that apply)</em>
+                </p>
 
-<label for="star3">★★★</label>
-<input type="radio" id="star3" name="rating" value="3" required>
+                <div class="features-group">
+                    <div>
+                        <input type="checkbox" id="durable" name="features" value="Durable">
+                        <label for="durable">Durable</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="design" name="features" value="Design">
+                        <label for="design">Design</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="performance" name="features" value="Performance">
+                        <label for="performance">Performance</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="value" name="features" value="Value">
+                        <label for="value">Value</label>
+                    </div>
+                </div>
 
-<label for="star4">★★★★</label>
-<input type="radio" id="star4" name="rating" value="4" required>
+                <!-- Review -->
+                <label for="review">
+                    Written Review <span class="optional">(Optional)</span>
+                </label>
+                <textarea id="review" name="review"></textarea>
 
-<label for="star5">★★★★★</label>
-<input type="radio" id="star5" name="rating" value="5" required>
+                <!-- Name -->
+                <label for="name">
+                    Your Name <span class="optional">(Optional)</span>
+                </label>
+                <input type="text" id="name" name="name">
 
-
-
-
-  <!-- Date -->
-  <label for="date">Date of Installation</label>
-  <input type="date" id="date" name="date" required>
-
-  <!-- Features -->
-  <p>
-    Which features did you find useful in the product?<br>
-    <em>(Check all that apply)</em>
-  </p>
-
-  <div class="features-group">
-
-    <div>
-      <input type="checkbox" id="durable" name="features" value="Durable">
-      <label for="durable">Durable</label>
+                <!-- Submit -->
+                <button type="submit">Post Review</button>
+            </form>
+        </main>
     </div>
 
-    <div>
-      <input type="checkbox" id="design" name="features" value="Design">
-      <label for="design">Design</label>
-    </div>
-
-    <div>
-      <input type="checkbox" id="performance" name="features" value="Performance">
-      <label for="performance">Performance</label>
-    </div>
-
-    <div>
-      <input type="checkbox" id="value" name="features" value="Value">
-      <label for="value">Value</label>
-    </div>
-
-  </div>
-
-  <!-- Review -->
-  <label for="review">
-    Written Review <span class="optional">(Optional)</span>
-  </label>
-  <textarea id="review" name="review"></textarea>
-
-  <!-- Name -->
-  <label for="name">
-    Your Name <span class="optional">(Optional)</span>
-  </label>
-  <input type="text" id="name" name="name">
-
-  <!-- Submit -->
-  <button type="submit">Post Review</button>
-
-</form>
-
-</main>
-
-</div>
-
-<footer>
-  <p>©<span id="currentyear"></span> 🌸 Ana Maria Mosquera 🌸 Colombia</p>
-  <span id="lastModified"></span>
-</footer>
-
+    <footer>
+        <p>©<span id="currentyear"></span> 🌸 Ana Maria Mosquera 🌸 Colombiaa</p>
+        <span id="lastModified"></span>
+    </footer>
 </body>
 </html>
 
