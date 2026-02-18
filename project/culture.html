@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about the culture, traditions, and gastronomy of Popayán.">
+    <meta name="author" content="Ana Mosquera">
+    <title>Popayán | Culture</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Popayán</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="culture.html">Culture</a>
+            <a href="visit.html">Visit</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/catedral-popayan-cauca.webp" alt="Center of Popayán" loading="lazy">
+            <h2>Culture, Traditions, and Daily Life</h2>
+        </section>
+
+        <section class="culture-intro">
+            <h2>Cultural Highlights</h2>
+            <p>Discover the most important historical sites, traditional food, and cultural events that define the identity of Popayán.</p>
+        </section>
+
+        <section class="culture-filters">
+            <button data-category="all">All</button>
+            <button data-category="historical">Historical Sites</button>
+            <button data-category="gastronomy">Gastronomy</button>
+            <button data-category="events">Events</button>
+        </section>
+
+        <section id="culture-container"></section>
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> 🌸 Ana Maria Mosquera 🌸 Colombia</p>
+        <span id="lastModified"></span>
+        <p class="references">
+            <a href="references.html">References</a>
+        </p>    
+    </footer>
+</body>
+</html>

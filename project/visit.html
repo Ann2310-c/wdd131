@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore landmarks and plan your visit to Popayán.">
+    <meta name="author" content="Ana Mosquera">
+    <title>Popayán | Visit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Popayán</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="culture.html">Culture</a>
+            <a href="visit.html">Visit</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/catedral-popayan-cauca.webp" alt="Center of Popayán" loading="lazy">
+            <h2>Culture, Traditions, and Daily Life</h2>
+        </section>
+
+        <section class="visit-intro">
+            <h2>Plan Your Visit to Popayán</h2>
+            <p>Here you can find useful information to prepare your trip to the White City of Colombia.</p>
+        </section>
+
+        <section id="planvisit">
+            <h2>Some Tips for your Visit</h2>
+            <div id="visit-container"></div>
+        </section>
+
+        <section class="visit-form">
+            <h2>Contact Us</h2>
+
+            <div class="visit-content">
+                <div class="visit-image">
+                    <img src="images/caldas-park-night.jpg" alt="Visit our city">
+                </div>
+
+                <form>
+                    <label>Name</label>
+                    <input type="text" required>
+
+                    <label>Email</label>
+                    <input type="email" required>
+
+                    <label for="season">Preferred Travel Season</label>
+                    <select id="season" name="season">
+                        <option value="jan-mar">January - March</option>
+                        <option value="apr-jun">April - June</option>
+                        <option value="jul-sep">July - September</option>
+                        <option value="oct-dec">October - December</option>
+                    </select>
+
+                    <label>Message</label>
+                    <textarea required></textarea>
+
+                    <button type="submit">Submit</button>
+                    <p id="form-message"></p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>©<span id="currentyear"></span> 🌸 Ana Maria Mosquera 🌸 Colombia</p>
+        <span id="lastModified"></span>
+        <p class="references">
+            <a href="references.html">References</a>
+        </p>    
+    </footer>
+</body>
+</html>
